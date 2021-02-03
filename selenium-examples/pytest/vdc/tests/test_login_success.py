@@ -8,4 +8,4 @@ def test_valid_crentials_login(vdc_driver):
     vdc_driver.find_element_by_id('password').send_keys('secret_sauce')
     vdc_driver.find_element_by_css_selector('.btn_action').click()
 
-    assert "/inventory.html" in vdc_driver.current_url
+    assert "/nope.html" in vdc_driver.current_url
